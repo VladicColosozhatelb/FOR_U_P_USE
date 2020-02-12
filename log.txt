@@ -1,0 +1,12 @@
+D:\U_PE>git log
+commit 45c2024993154b280e55c23d0c7c15e0d9795449 (HEAD -> master)
+Author: Vlad <vladicus7777720@mail.ru>
+Date:   Wed Feb 12 23:37:07 2020 +0300
+
+    add D:\U_PE\task1\status.txt
+
+commit 2df570119cd0997829410abdf606db52e944d67c
+Author: Vlad <vladicus7777720@mail.ru>
+Date:   Wed Feb 12 23:35:39 2020 +0300
+
+    add .gitignore
