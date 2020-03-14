@@ -1,12 +1,12 @@
 {
 	"info": {
-		"_postman_id": "b928c386-0182-41fa-8755-a78c17a56d7a",
-		"name": "Animals",
+		"_postman_id": "ad7d501e-74ad-45af-b695-c34cbb86c1cb",
+		"name": "Video",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Dog",
+			"name": "Ice and Fire",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -17,7 +17,7 @@
 			"response": []
 		},
 		{
-			"name": "Cats",
+			"name": "TVProgramm",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -28,7 +28,7 @@
 			"response": []
 		},
 		{
-			"name": "Red list",
+			"name": "SportVideo",
 			"request": {
 				"method": "GET",
 				"header": [],
