@@ -1,0 +1,10 @@
+let array=new PostsView(posts)
+array.ShowPosts();
+array.AddPost(posts[4]);
+array.DeletePost(4);
+array.EditPost(3,{description: 'checking',photoLink: 'https://static.thousandwonders.net/Busan.original.1586.jpg'});
+//Регулирование пользователя
+let user=new User("Ivanov Ivashka");
+new User("");
+new User("Lev Levskoy");
+//пока я не сделано существования пользователя, но если в скобках не указать пользователя, редактирование и удаление поста недоступно, а также доступна только регистрация. Если же пользователь зарегестрирован, то доступен "выход" "добавление поста", а также редактирование и удаление, но только своих постов.
