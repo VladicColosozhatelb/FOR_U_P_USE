@@ -1,0 +1,229 @@
+body {
+	padding: 0;
+	font-family: "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	width: 80%;
+	color: #000000;
+}
+.AuthorDate
+{
+	display: flex;
+	flex-direction: row;
+}
+#Registration
+{
+	background: #b5bdc8;
+	visibility: hidden;
+    background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+    font-size: 16px; /* Размер шрифта */
+    padding: 10px 20px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    border: 1px solid #333; /* Параметры рамки */
+    border-radius: 20px; /* Радиус скругления */
+}
+#buttons
+{
+	background: #b5bdc8;
+    background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+    font-size: 16px; /* Размер шрифта */
+    padding: 10px 20px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    border: 1px solid #333; /* Параметры рамки */
+    border-radius: 20px; /* Радиус скругления */
+}
+#textOfpost
+{
+	cols: 10;
+	rows: 50;
+	width: 99%;
+	
+}
+#Avatarka
+{
+	 width: 25%;
+	 higth: 30%;
+	 
+}
+.name
+{
+	margin-left: 5%;
+}
+.time
+{
+	margin-left: 5%;
+}
+.date
+{
+	margin-left:10%;
+}
+.Actions
+{
+	display:flex;
+	flex-direction:row;
+	width: 30%;
+	margin-left:10%;
+	height: 10%;
+}
+h1 {
+	width: 100px;
+	font-family: "Arial", sans-serif;
+	font-size: 20px;
+	line-height: 0px;
+}
+h2{
+	
+	width: 450px;
+	margin-left: 15%;
+	font-family: "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 0px;
+}
+#buttonAddPost
+{
+
+	margin-top: 20%;
+	color: red;
+	width: 60%;
+	background: #b5bdc8;
+    background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+    font-size: 16px; /* Размер шрифта */
+    padding: 10px 20px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    border: 1px solid #333; /* Параметры рамки */
+    border-radius: 20px; /* Радиус скругления */
+}
+#EXIT
+{
+	position: absolute;
+	font-size: 10px;
+	background: #b5bdc8;
+    background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+    font-size: 16px; /* Размер шрифта */
+    padding: 10px 20px; /* Поля вокруг текста */
+    color: #fff; /* Цвет текста */
+    border: 1px solid #333; /* Параметры рамки */
+    border-radius: 20px; /* Радиус скругления */
+}
+#nameOf
+{
+	margin: auto;
+	font-family: "Arial", sans-serif;
+	font-size: 23px;
+	line-height: 23px;
+	
+	}
+#nameSort
+{
+	type:text;
+	size: 40;
+	
+}
+
+#TagsSort
+{
+	type:text;
+	size:40;
+}
+#DateSort
+{
+	type:text;
+	size:40;
+}
+#MorePosts{
+	justify-content: center;
+	margin-right: 22.5%;
+}
+.flex-footer {
+/*генерирует flex-контейнер уровня строки*/
+	 padding: 0px;
+	 border: 1px solid black;
+	 display: flex;
+	 justify-content:space-between;
+	 margin: auto;
+	 background-color:gray;
+}
+.LikesAndTags
+{
+	display: flex;
+	flex-direction:column;
+}
+.flex-header {
+/*генерирует flex-контейнер уровня строки*/
+    padding: 0px;
+	background: linear-gradient(to top, #99ffff, #664cff);
+    padding: 0px;
+    border: 1px solid #333;
+	display: flex;
+	flex-direction: row;
+	margin-left: -1%;
+	justify-content: center;
+}
+#Like
+{
+	width: 30%;
+	height:30%;
+}
+#Delete
+{
+	width: 30%;
+	height:30%;
+	margin-top: 6%;
+}
+#Edit
+{
+	width: 30%;
+	height:30%;
+}
+.Photo
+{
+	justify-content: right;
+	border-radius:10px;
+	width: 50%;
+
+	
+}
+.PhotoAndTags
+{
+	display: flex;
+	flex-direction: row;
+	height: 50%;
+}
+.Filters
+{
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	margin-right: 65%;
+	background: #6666ff;
+    background: linear-gradient(to top, #7f4cff, #6600b2);
+	font-size: 29px;
+	position: fixed;
+}
+.tags
+{
+	display: flex;
+	flex-direction: column;
+	background: -webkit-linear-gradient(left, #C94A4A, #F78154, #F2C14E, #5FAD56, #4D9078); /* Для Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(left, #C94A4A, #F78154, #F2C14E, #5FAD56, #4D9078); /* Для Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(left, #C94A4A, #F78154, #F2C14E, #5FAD56, #4D9078); /* Для Firefox 3.6 - 15 */
+	background: linear-gradient(left, #C94A4A, #F78154, #F2C14E, #5FAD56, #4D9078); /* Стандартный синтаксис */
+}
+.container div
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 35%;
+}
+
+.box 
+{
+
+	background: linear-gradient(to top, #99ffff, #664cff);
+	padding: 0px;
+	border: 1px solid #333;
+	border-radius:10px;
+	width: 60%;
+}
+
