@@ -1,0 +1,1 @@
+select * from u_pe.post where USER_ID=4;
