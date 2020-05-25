@@ -6,13 +6,99 @@ body {
 	width: 80%;
 	color: #000000;
 }
+.close{
+	cursor: pointer;
+}
 .AuthorDate
 {
 	display: flex;
 	flex-direction: row;
 }
+.MyModal
+{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left:0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.8);
+}
+.addPost
+{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left:0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.8);
+}
+.listLikes
+{
+	display: "block";
+}
+#row
+{
+display: flex;
+flex-direction:column;	
+}
+.addPostContent
+{
+	
+	background-color:#fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #333;
+	width: 20%;
+}
+.EditPost
+{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left:0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.8);
+}
+.EditPostContent
+{
+	background-color:#fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #333;
+	width: 20%;
+}
+#login
+{
+	justify-content: center;
+}
+.ModalContent
+{	
+
+	background-color:#fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #333;
+	width: 20%;
+}
+.close
+{
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
 #Registration
 {
+	cursor: pointer;
 	background: #b5bdc8;
 	visibility: hidden;
     background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
@@ -22,8 +108,9 @@ body {
     border: 1px solid #333; /* Параметры рамки */
     border-radius: 20px; /* Радиус скругления */
 }
-#buttons
+.buttons
 {
+	cursor: pointer;
 	background: #b5bdc8;
     background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
     font-size: 16px; /* Размер шрифта */
@@ -39,7 +126,7 @@ body {
 	width: 99%;
 	
 }
-#Avatarka
+.Avatarka
 {
 	 width: 25%;
 	 higth: 30%;
@@ -59,6 +146,7 @@ body {
 }
 .Actions
 {
+	cursor: pointer;
 	display:flex;
 	flex-direction:row;
 	width: 30%;
@@ -81,7 +169,7 @@ h2{
 }
 #buttonAddPost
 {
-
+cursor: pointer;
 	margin-top: 20%;
 	color: red;
 	width: 60%;
@@ -95,6 +183,7 @@ h2{
 }
 #EXIT
 {
+	cursor: pointer;
 	position: absolute;
 	font-size: 10px;
 	background: #b5bdc8;
@@ -115,6 +204,7 @@ h2{
 	}
 #nameSort
 {
+	cursor: pointer;
 	type:text;
 	size: 40;
 	
@@ -122,15 +212,13 @@ h2{
 
 #TagsSort
 {
+	cursor: pointer;
 	type:text;
 	size:40;
 }
-#DateSort
-{
-	type:text;
-	size:40;
-}
+
 #MorePosts{
+	cursor: pointer;
 	justify-content: center;
 	margin-right: 22.5%;
 }
@@ -161,19 +249,25 @@ h2{
 }
 #Like
 {
+	visibility: disable;
 	width: 30%;
 	height:30%;
+	cursor: pointer;
 }
 #Delete
 {
+	visibility: disable;
 	width: 30%;
 	height:30%;
 	margin-top: 6%;
+	cursor: pointer;
 }
 #Edit
 {
+	visibility: disable;
 	width: 30%;
 	height:30%;
+	cursor: pointer;
 }
 .Photo
 {

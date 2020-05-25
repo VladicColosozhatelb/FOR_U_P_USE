@@ -38,13 +38,16 @@ class PostList{
 			filteredPosts1 = filteredPosts1.filter(post => this.Contains(post.hashTags, filters.hashTags));
 		}
         filteredPosts1=this._collectionOfPosts.slice(start, start + numberOfPosts);
-		return filteredPosts1.sort(this.CompareData);
+		return filteredPosts1;
 	}
     get(id)
     {
-        if(id<0 || this._collectionOfPosts[id-1]===undefined)
+        if(id<0)
             return false;
-        return this._collectionOfPosts[id-1];
+         for(let i=0;i<this._collectionOfPosts.length;++i)
+		   if(this._collectionOfPosts[i].id==id)
+			   return this._collectionOfPosts[i];
+		 return false;
     }
     _validate(posst)
     {
@@ -77,18 +80,30 @@ class PostList{
         return resultArray;
     }
     edit(id,posst){
-        if(id<0 ||  this._collectionOfPosts[id-1]===undefined)
+        if(id<0)
             return false;
         else{
              var count=0;
+			 var mesto=-1;
+			 for(let i=0;i<this._collectionOfPosts.length;++i)
+				 if(this._collectionOfPosts[i].id==id)
+					 mesto=i;
+			 if(mesto===-1)
+				 return false;
              if( posst.description!=undefined){
              if(posst.description.length<=200){
-                 this._collectionOfPosts[id-1].description=posst.description;
+                 this._collectionOfPosts[mesto].description=posst.description;
                    count++;}}
+		     if(posst.hashTags!=undefined)
+			 {
+				 this._collectionOfPosts[mesto].hashTags=[];
+				 let help=posst.hashTags.split('\n');
+				 for(var i=0;i<help.length;++i)
+					  this._collectionOfPosts[mesto].hashTags.push(help[i]);
+			 }
              if(posst.photoLink!=undefined){
-             
-                 this._collectionOfPosts[id-1].photoLink=posst.photoLink;
-                 count++
+                 this._collectionOfPosts[mesto].photoLink=posst.photoLink;
+                 count++;
             }
         if(count!=0)
              return true;
@@ -98,15 +113,20 @@ class PostList{
     }
     remove(id)
     {
-        if(this._collectionOfPosts[id]===undefined)
-            return false;
-        else{
-            delete this._collectionOfPosts[id];
+			let f=[];
+			for(let i=0;i<this._collectionOfPosts.length;++i)
+				if(this._collectionOfPosts[i].id!=id)
+					f.push(this._collectionOfPosts[i]);
+			this._collectionOfPosts=f;
             return true;
-        }
+        
     }
     clear()
     {     
         this._collectionOfPosts=[];
     }
+	getPostsList()
+	{
+		return this._collectionOfPosts;
+	}
 }

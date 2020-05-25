@@ -10,13 +10,13 @@
 
 <header class="flex-header">
 
-    <img src="resources//Images//Vlad.jpg" width=10%,height=5% >
+    <img id="MainAvatar" src="" width=10%,height=5% >
 
     <h1>VLADDER</h1>
 
     <p style="text-align: center"><button id="Registration">Registration</button></p>
 
-    <h1><em><ins>Home</ins></em></h1>
+    <h1 id="Home"><em><ins>Home</ins></em></h1>
 
     <p><button id="buttonAddPost">Add post</button>
 
@@ -39,17 +39,55 @@
 <h1>Filters</h1>
 
 <section class="Filters">
-
-    <button id="buttons">Name:</button>
-    <button id="buttons">Tags:</button>
-    <button id="buttons">Date:</button>
-
+    <button id="NameFilter" class="buttons">Name:</button>
+	<input id="NameF"></input>
+    <button id="TagsFilter" class="buttons">Tags:</button>
+	<input id="TagsF"></input>
 </section>
+<div id="myModal" class="MyModal">
+	<div class="ModalContent">
+	<span class="close">&times;</span>
+	<h1> Sign Up </h1>
+	<p> Login*</p>
+	<input id="login"></input>
+	<p> Password*</p>
+	<input id="password"></input>
+	<button id="sign" class="buttons">Sign up</button>
+	</div>
+</div>
+<div id="addPost" class="addPost">
+	<div class="addPostContent">
+	<span class="close">&times;</span>
+	<h1> PostForm </h1>
+	<p> Description of post</p>
+	<textarea id="description"></textarea>
+	<p> Url for post's photo</p>
+	<input id="postUrl"></input>
+	<p> Tags(Input with space!!!)</p>
+	<input id="tags"></input>
+	<button id="adding" class="buttons">Add Post</button>
+	</div>
+</div>  	
+<div id="EditPost" class="EditPost">
+	<div class="EditPostContent">
+	<span class="close">&times;</span>
+	<h1> PostForm </h1>
+	<p> New description of post</p>
+	<textarea id="EditDescription"></textarea>
+	<p> Url for new post's photo</p>
+	<input id="EditPostUrl"></input>
+	<p> Edit Tags(Input with space!!!)</p>
+	<textarea id="EditTags"></textarea>
+	<button id="Editing" class="buttons">Edit Post</button>
+	</div>
+</div>  	
 <div class="container">
-<div id="help"></div>
-	<div id="add" justify-content="center">
+
+<div id="add" justify-content="center">
    <button id="MorePosts">More</button>
 	</div>
+<div id="help"></div>
+	
 </div>
 </main>
 
@@ -66,10 +104,15 @@
     <p>23.02.20</p>
 
 </footer>
- <script src="resources//Posts.js"></script>
- <script src="resources//Class.js"></script>
-  <script src="resources//Lab9.js"></script>
-  <script src="resources//User.js"></script>
+  <script src="resources/User.js"></script>
+
+ <script src="resources/Class.js"></script>
+  <script src="resources/Lab9.js"></script>
+<script src="resources/Initialization.js"></script>
+
+<script src="resources/Events.js"></script>
+<script src="resources/Posts.js"></script>
+
 </body>
 
 </html>

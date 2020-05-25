@@ -10,13 +10,13 @@
 
 <header class="flex-header">
 
-    <img src="resources//Images//Vlad.jpg" width=10%,height=5% >
+    <img id="MainAvatar" src="" width=10%,height=5% >
 
     <h1>VLADDER</h1>
 
     <p style="text-align: center"><button id="Registration">Registration</button></p>
 
-    <h1><em><ins>Home</ins></em></h1>
+    <h1 id="Home"><em><ins>Home</ins></em></h1>
 
     <p><button id="buttonAddPost">Add post</button>
 
@@ -39,17 +39,57 @@
 <h1>Filters</h1>
 
 <section class="Filters">
-
-    <button id="buttons">Name:</button>
-    <button id="buttons">Tags:</button>
-    <button id="buttons">Date:</button>
-
+    <button id="NameFilter" class="buttons">Name:</button>
+	<input id="NameF"></input>
+    <button id="TagsFilter" class="buttons">Tags:</button>
+	<input id="TagsF"></input>
 </section>
+<div id="myModal" class="MyModal">
+	<div class="ModalContent">
+	<span class="close">&times;</span>
+	<h1> Sign Up </h1>
+	<p> Login*</p>
+	<input id="login"></input>
+	<p> Password*</p>
+	<input id="password"></input>
+	<p> Url for Avatar</p>
+	<input id="avatar"></input>
+	<button id="sign" class="buttons">Sign up</button>
+	</div>
+</div>
+<div id="addPost" class="addPost">
+	<div class="addPostContent">
+	<span class="close">&times;</span>
+	<h1> PostForm </h1>
+	<p> Description of post</p>
+	<textarea id="description"></textarea>
+	<p> Url for post's photo</p>
+	<input id="postUrl"></input>
+	<p> Tags(Input with space!!!)</p>
+	<input id="tags"></input>
+	<button id="adding" class="buttons">Add Post</button>
+	</div>
+</div>  	
+<div id="EditPost" class="EditPost">
+	<div class="EditPostContent">
+	<span class="close">&times;</span>
+	<h1> PostForm </h1>
+	<p> New description of post</p>
+	<textarea id="EditDescription"></textarea>
+	<p> Url for new post's photo</p>
+	<input id="EditPostUrl"></input>
+	<p> Edit Tags(Input with enter)</p>
+	<textarea id="EditTags"></textarea>
+	<button id="Editing" class="buttons">Edit Post</button>
+	</div>
+</div>  	
 <div class="container">
-<div id="help"></div>
-	<div id="add" justify-content="center">
+
+<div id="add" justify-content="center">
    <button id="MorePosts">More</button>
 	</div>
+<div id="help"></div>
+	
 </div>
 </main>
 
@@ -66,43 +106,12 @@
     <p>23.02.20</p>
 
 </footer>
+  <script src="resources//User.js"></script>
+ <script src="resources//Posts.js"></script>
  <script src="resources//Class.js"></script>
   <script src="resources//Lab9.js"></script>
-  <script src="resources//User.js"></script>
+  <script src="resources//Events.js"></script>
+  <script src="resources//Initialization.js"></script>
 </body>
 
 </html>
-
-
-
-
-<!--<div id="2" class="box">
-<img id="Avatarka" src="resources//Images//Steve0.jpg">
-	 <section class="NameDateTime">
-	<p id="name"> Name</p>
-	<p id="date">Date</p>
-	<p id="time"> Time</p>
-    </section>
-	<textarea cols="50" rows="8">
-	Это пост про зачетки. Чтобы сдавать экзамены, нам необходимо закрыть прошлый семестр. Что это значит? У вас на странице за третий семестр должен быть большой знак "Z" и стоять печать. Печать ставит деканат. Букву "Z" должны ставить мы (ну обычно я), а печать - деканат в течении недели после сдачи старостой им зачеток с буквами "Z". В сложившейся ситуации, я зачетки у вас собрать не могу, а закрыть семестр третий надо. В связи с этим, я очень сильно вас прошу выполнить следующий набор действий:
-
-1) Проверьте, что у вас за третий семестр стоят все зачеты и экзамены. Экзаменов должно быть 5 (ВМА, МА, Экономика, ДМиМЛ, Программирование). Зачетов должно быть 7 (ВКИАД, Физра, ВМА, Программирование, ДУ, МА, ДМиМЛ). Если вы на военке, то зачетов должно быть, соответственно, 8. Если чего-то из вышеназванного не хватает, обязательно скажите мне и пункты ниже не выполняйте.
-
-2) Откройте разворот за второй семестр. У вас там должны быть на обе страницы (зачетов и экзаменов) стоять две типа буквы "Z" ручкой и печать. Посмотрите, как именно выглядит эта "Z".
-
-3) Откройте разворот за третий семестр и аккуратно под линеечку нарисуйте точно такое же "Z".
-
-Это все. Когда у нас будет первый зачет, или, например, сразу же, как нам понадобится собраться всей группой (например 
-	</textarea>
-	<section class="PhotoAndTags">
-	<section class="LikesAndTags">
-	<section class="tags">
-	<p>#mamamia</p>
-	<p>#war<p>
-	</section>
-	  <p><button id="more"><img src="resources//Images//like.png" style="width: 20%"></button></p>
-	</section>
-	<img class="Photo" src="resources//Images//Stalin.jpg"  alt="Add photo" >
-	</section>
-        
-    </div>-->
