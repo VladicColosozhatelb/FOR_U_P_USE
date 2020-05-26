@@ -1,0 +1,1 @@
+select * from u_pe.post where description like '%hello%' and USER_ID=3;
